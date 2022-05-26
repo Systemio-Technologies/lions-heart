@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {LoadingService} from "../../services/loading.service";
 
 @Component({
   selector: 'app-loading',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoadingComponent implements OnInit {
 
-  constructor() { }
+  constructor(public loading: LoadingService) { }
 
   ngOnInit(): void {
+    this.loading.showLoading();
+    setTimeout(() => {
+      this.loading.hideLoading();
+    }, 800);
   }
 
 }
