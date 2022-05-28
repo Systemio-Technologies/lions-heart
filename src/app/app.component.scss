@@ -8,3 +8,36 @@
   color: #D0D0D0;
   font-size: 1.2rem;
 }
+
+h6 {
+  color: #D0D0D0;
+  margin-top: 5px;
+  font-size: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: #D0D0D0;
+}
+
+p {
+  color: #D0D0D0;
+}
+
+.footer-social {
+  text-align: center;
+  margin-top: 2%;
+}
+
+.footer-social > div {
+  text-align: center;
+}
+
+.footer-links {
+  border-top: solid 0.2px rgba(256, 256, 256, 0.2);
+  margin-top: 3%;
+  margin-left: 8%;
+  margin-right: 8%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
