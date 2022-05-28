@@ -41,3 +41,16 @@ p {
   padding-top: 3%;
   padding-bottom: 2%;
 }
+
+.cta-button {
+  padding: 18px 32px;
+  border-radius: 120px;
+  background-color: #ff6100;
+  color: white;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #ffc631;
+  color: black;
+}
