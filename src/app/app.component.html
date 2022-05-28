@@ -1,2 +1,36 @@
 <app-loading *ngIf="loadingService.isLoading()"></app-loading>
 <router-outlet *ngIf="!loadingService.isLoading()"></router-outlet>
+<footer id="app-footer" *ngIf="!loadingService.isLoading()">
+  <div class="footer-text">
+    <p>
+      Lorem ipsum lorem ipsum lorem ipsum. Lorem ipsum lorem ipsum lorem ipsum ipsum lorem ipsum, ipsum lorem ipsum ipsum.
+    </p>
+  </div>
+  <div class="footer-social row">
+    <div class="telegram-social col-sm-2">
+      <a href="https://telegram.com" target="_blank">
+
+      </a>
+    </div>
+    <div class="twitter-social col-sm-2">
+      <a href="https://twitter.com" target="_blank">
+
+      </a>
+    </div>
+    <div class="reddit-social col-sm-2">
+      <a href="https://reddit.com" target="_blank">
+
+      </a>
+    </div>
+    <div class="discord-social col-sm-2">
+      <a href="https://discord.com" target="_blank">
+
+      </a>
+    </div>
+    <div class="instagram-social col-sm-2">
+      <a href="https://instagram.com" target="_blank">
+
+      </a>
+    </div>
+  </div>
+</footer>

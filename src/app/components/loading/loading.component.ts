@@ -14,7 +14,7 @@ export class LoadingComponent implements OnInit {
     this.loading.showLoading();
     setTimeout(() => {
       this.loading.hideLoading();
-    }, 800);
+    }, 1000);
   }
 
 }
