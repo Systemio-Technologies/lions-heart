@@ -45,7 +45,7 @@
     <div id="why-title" class="col-sm-12">
       <h1>Why Lions Heart</h1>
     </div>
-    <div *ngIf="scrolled == 1" id="instant-usage" class="col-sm-12 row why-section" [@enterAnimation]>
+    <div *ngIf="scrolled >= 1" id="instant-usage" class="col-sm-12 row why-section" [@slideInOut]>
       <div class="col-sm-6">
         <img src="./assets/why_2.gif" style="width: 100%"/>
       </div>
@@ -63,7 +63,7 @@
         </p>
       </div>
     </div>
-    <div *ngIf="scrolled == 2" id="community-powered" class="col-sm-12 row why-section" [@enterAnimation]>
+    <div *ngIf="scrolled >= 2" id="community-powered" class="col-sm-12 row why-section" [@whyAnimation]>
       <div class="col-sm-6">
         <img src="./assets/Big_rocket_still_img.png" style="width: 100%"/>
       </div>
@@ -81,7 +81,7 @@
         </p>
       </div>
     </div>
-    <div *ngIf="scrolled == 3" id="secure-and-safe" class="col-sm-12 row why-section" [@enterAnimation]>
+    <div *ngIf="scrolled >= 3" id="secure-and-safe" class="col-sm-12 row why-section" [@whyAnimation]>
       <div class="col-sm-6">
         <img src="./assets/big_rocket_apng.png" style="width: 100%"/>
       </div>
