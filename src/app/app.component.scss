@@ -5,6 +5,8 @@
 }
 
 .footer-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
   color: #D0D0D0;
   font-size: 1.2rem;
 }
@@ -45,12 +47,22 @@ p {
 .cta-button {
   padding: 18px 32px;
   border-radius: 120px;
-  background-color: #ff6100;
+  border: 0;
+  background-image: linear-gradient(to right, #f5ce62, #e43603, #29323c, #485563);
+  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
   color: white;
   font-weight: bold;
+  background-size: 300% 100%;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .cta-button:hover {
-  background-color: #ffc631;
-  color: black;
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }

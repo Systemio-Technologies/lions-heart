@@ -1,10 +1,104 @@
-<div id="homepage-wrapper" class="container-fluid">
-  <section id="hero-section">
-
+<div [@enterAnimation] id="homepage-wrapper">
+  <section id="hero-section" class="col-sm-12 row">
+    <div class="col-sm-6">
+      <h1 id="hero-title">
+        Lions Heart.<br>
+        Lorem ipsum
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas scelerisque neque ac aliquet.<br>
+        Suspendisse a magna sit amet enim imperdiet posuere in ut lorem.
+      </p>
+      <div class="col-sm-6" style="text-align: center">
+        <button class="btn cta-button">Get Lions Heart</button>
+      </div>
+      <div class="hero-social row">
+        <div class="col-sm-2">
+          <button class="btn hero-social-btn fourth">
+            <fa-icon [icon]="faBrands.faTelegram"></fa-icon>
+          </button>
+        </div>
+        <div class="col-sm-2">
+          <button class="btn hero-social-btn">
+            <fa-icon [icon]="faBrands.faTwitter"></fa-icon>
+          </button>
+        </div>
+        <div class="col-sm-2">
+          <button class="btn hero-social-btn">
+            <fa-icon [icon]="faBrands.faDiscord"></fa-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6" style="text-align: center">
+      <img src="./assets/How1_gif.gif" style="width: 100%;" />
+    </div>
+    <div class="col-sm-12" style="text-align: center; margin-top: 60px;">
+      <span style="cursor:pointer;">
+        <img src="./assets/Arrow-down.svg" style="width: 5%"/>
+        <h3 style="color: #D0D0D0">Why Lions Heart?</h3>
+      </span>
+    </div>
   </section>
 
-  <section id="why-section">
-
+  <section id="why-section" class="col-sm-12 row">
+    <div id="why-title" class="col-sm-12">
+      <h1>Why Lions Heart</h1>
+    </div>
+    <div *ngIf="scrolled == 1" id="instant-usage" class="col-sm-12 row why-section" [@enterAnimation]>
+      <div class="col-sm-6">
+        <img src="./assets/why_2.gif" style="width: 100%"/>
+      </div>
+      <div class="col-sm-6 why-text-content">
+        <h2>
+          Instant<br> Usage<br> Rewards
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales lectus sed lectus dignissim suscipit. <br>
+          Etiam id ex odio. Phasellus consectetur neque justo, quis suscipit dui egestas sed. <br>
+          Mauris dignissim posuere finibus.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales lectus sed lectus dignissim suscipit. <br>
+          Etiam id ex odio. Phasellus consectetur neque justo, quis suscipit dui egestas sed. <br>
+          Mauris dignissim posuere finibus.
+        </p>
+      </div>
+    </div>
+    <div *ngIf="scrolled == 2" id="community-powered" class="col-sm-12 row why-section" [@enterAnimation]>
+      <div class="col-sm-6">
+        <img src="./assets/Big_rocket_still_img.png" style="width: 100%"/>
+      </div>
+      <div class="col-sm-6 why-text-content">
+        <h2>
+          Community<br> Powered
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales lectus sed lectus dignissim suscipit. <br>
+          Etiam id ex odio. Phasellus consectetur neque justo, quis suscipit dui egestas sed. <br>
+          Mauris dignissim posuere finibus.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales lectus sed lectus dignissim suscipit. <br>
+          Etiam id ex odio. Phasellus consectetur neque justo, quis suscipit dui egestas sed. <br>
+          Mauris dignissim posuere finibus.
+        </p>
+      </div>
+    </div>
+    <div *ngIf="scrolled == 3" id="secure-and-safe" class="col-sm-12 row why-section" [@enterAnimation]>
+      <div class="col-sm-6">
+        <img src="./assets/big_rocket_apng.png" style="width: 100%"/>
+      </div>
+      <div class="col-sm-6 why-text-content">
+        <h2>
+          Secure & Safe
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales lectus sed lectus dignissim suscipit. <br>
+          Etiam id ex odio. Phasellus consectetur neque justo, quis suscipit dui egestas sed. <br>
+          Mauris dignissim posuere finibus.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales lectus sed lectus dignissim suscipit. <br>
+          Etiam id ex odio. Phasellus consectetur neque justo, quis suscipit dui egestas sed. <br>
+          Mauris dignissim posuere finibus.
+        </p>
+      </div>
+    </div>
   </section>
 
   <section id="how-to-buy-section">

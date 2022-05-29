@@ -1,0 +1,99 @@
+#hero-section {
+  padding: 10% 5% 5%;
+  margin: 0;
+  width: 100%;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  color: white;
+}
+
+#hero-section h1 {
+  font-size: 6rem;
+}
+
+#hero-section p {
+  margin-top: 30px;
+  color: #D0D0D0;
+}
+
+.cta-button {
+  margin-top: 40px;
+  padding: 18px 32px;
+  border: 0;
+  border-radius: 120px;
+  background-image: linear-gradient(to right, #29323c, #485563, #f5ce62, #e85a19);
+  box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+  color: white;
+  font-weight: bold;
+  background-size: 300% 100%;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.cta-button:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.hero-social {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.hero-social-btn {
+  padding: 8px 12px;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  border: 0;
+  color: #D0D0D0;
+  background-image: -webkit-linear-gradient(45deg, #FF6100 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #FF6100 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+
+.hero-social-btn:hover {
+  background-position: 0;
+  color: #fff;
+}
+
+#why-section {
+  margin: 0;
+  background: #201E21;;
+  padding: 5%;
+  color: #D0D0D0;
+}
+
+#why-title {
+  color: #D0D0D0;
+  text-align: center;
+}
+
+#why-title h1 {
+  font-size: 4rem;
+}
+
+.why-section {
+  margin: 10% 0 0;
+}
+
+.why-section h2 {
+  font-size: 3rem;
+}
+
+.why-section p {
+  margin-top: 30px;
+}
+
+.why-text-content {
+  padding: 5% 8%;
+  text-align: left;
+}
+
