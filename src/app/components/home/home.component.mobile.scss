@@ -1,0 +1,33 @@
+@media only screen and (min-width: 200px) and (max-width: 820px) {
+  #hero-section {
+    padding: 55% 5% 5%;
+  }
+
+  #hero-section h1 {
+    font-size: 3rem;
+  }
+
+  #why-title h1 {
+    font-size: 2rem;
+  }
+
+  #how-to-buy-section h1 {
+    font-size: 2rem;
+  }
+
+  #faq-section h1 {
+    font-size: 2rem;
+  }
+
+  .background-text {
+    font-size: 5rem !important;
+  }
+
+  .faq-item {
+    margin: 15px 0 0 0;
+  }
+
+  .faq-image {
+    margin-top: -175% !important;
+  }
+}

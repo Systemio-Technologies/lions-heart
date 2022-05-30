@@ -19,7 +19,7 @@ import { trigger, style, animate, transition } from '@angular/animations';
     )
   ],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss', './app.component.mobile.scss']
 })
 export class AppComponent {
   title = 'Lions Heart';

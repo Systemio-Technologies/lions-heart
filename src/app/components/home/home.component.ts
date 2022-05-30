@@ -42,13 +42,13 @@ import {animate, sequence, state, style, transition, trigger} from "@angular/ani
       ]
     ),
     trigger('slideTitleAnimation', [
-        state('false', style({ transform: 'translateX(0%)' })),
-        state('true', style({ transform: 'translateX(-15%)' })),
+        state('false', style({ textAlign: 'center', transform: 'translateX(0%)' })),
+        state('true', style({ textAlign: 'left', transform: 'translateX(-5%)' })),
         transition('false => true', [
-          animate('200ms ease-in', style({transform: 'translateX(-15%)'})),
+          animate('200ms ease-in', style({textAlign: 'left', transform: 'translateX(-5%)'})),
         ]),
         transition('true => false', [
-          animate('200ms ease-in', style({transform: 'translateX(0%)'})),
+          animate('200ms ease-in', style({textAlign: 'center', transform: 'translateX(0%)'})),
         ])
       ]
     ),
@@ -74,7 +74,7 @@ import {animate, sequence, state, style, transition, trigger} from "@angular/ani
     ),
   ],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss', './home.component.mobile.scss']
 })
 export class HomeComponent implements OnInit {
 
