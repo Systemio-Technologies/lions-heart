@@ -43,9 +43,10 @@
 
   <section id="why-section" class="col-sm-12 row">
     <div id="why-title" class="col-sm-12">
-      <h1>Why Lions Heart</h1>
+      <h1 class="background-text">ROAR ROAR</h1>
+      <h1>Why Lions Heart?</h1>
     </div>
-    <div *ngIf="scrolled >= 1" id="instant-usage" class="col-sm-12 row why-section" [@slideInOut]>
+    <div [style.opacity]="scrolled === 1 ? '1' : '0'" id="instant-usage" class="col-sm-12 row why-section" style="margin-top: 8%" [@whyAnimation]>
       <div class="col-sm-6">
         <img src="./assets/why_2.gif" style="width: 100%"/>
       </div>
@@ -63,7 +64,7 @@
         </p>
       </div>
     </div>
-    <div *ngIf="scrolled >= 2" id="community-powered" class="col-sm-12 row why-section" [@whyAnimation]>
+    <div [style.opacity]="scrolled === 2 ? '1' : '0'" id="community-powered" class="col-sm-12 row why-section" [@whyAnimation]>
       <div class="col-sm-6">
         <img src="./assets/Big_rocket_still_img.png" style="width: 100%"/>
       </div>
@@ -81,7 +82,7 @@
         </p>
       </div>
     </div>
-    <div *ngIf="scrolled >= 3" id="secure-and-safe" class="col-sm-12 row why-section" [@whyAnimation]>
+    <div [style.opacity]="scrolled === 3 ? '1' : '0'" id="secure-and-safe" class="col-sm-12 row why-section" [@whyAnimation]>
       <div class="col-sm-6">
         <img src="./assets/big_rocket_apng.png" style="width: 100%"/>
       </div>
@@ -101,8 +102,65 @@
     </div>
   </section>
 
-  <section id="how-to-buy-section">
+  <section id="how-to-buy-section" class="col-sm-12 row" style="margin: 0">
+    <div class="col-sm-12" style="text-align: center; margin-bottom: 30px">
+      <h1 class="background-text">KING'S HEART</h1>
+      <h1>How to buy?</h1>
+    </div>
+    <div class="col-sm-12 row" style="margin: 0">
+      <div class="col-sm-5">
+        <img src="./assets/How1_gif.gif" style="width: 100%; margin-top: 30%;" />
+      </div>
+      <div id="steps" class="col-sm-7">
+        <div class="col-sm-12 row step" [@slideInOut]="howStepOne">
+          <div class="col-sm-2 step-no">
+            <h3>01</h3>
+          </div>
+          <div class="col-sm-10 step-content">
+            <h2>Create MetaMask Wallet</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales lectus sed lectus dignissim suscipit. <br>
+              Etiam id ex odio. Phasellus consectetur neque justo, quis suscipit dui egestas sed. Mauris dignissim posuere finibus.
+            </p>
+          </div>
+        </div>
 
+        <div class="col-sm-12 row step" [@slideInOut]="howStepTwo">
+          <div class="col-sm-2 step-no">
+            <h3>02</h3>
+          </div>
+          <div class="col-sm-10 step-content">
+            <h2>Send $ETH to MetaMask</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales lectus sed lectus dignissim suscipit. <br>
+              Etiam id ex odio. Phasellus consectetur neque justo, quis suscipit dui egestas sed. Mauris dignissim posuere finibus.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-12 row step" [@slideInOut]="howStepThree">
+          <div class="col-sm-2 step-no">
+            <h3>03</h3>
+          </div>
+          <div class="col-sm-10 step-content">
+            <h2>Visit LIONS Swap</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales lectus sed lectus dignissim suscipit. <br>
+              Etiam id ex odio. Phasellus consectetur neque justo, quis suscipit dui egestas sed. Mauris dignissim posuere finibus.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-12 row step" [@slideInOut]="howStepFour">
+          <div class="col-sm-2 step-no">
+            <h3>04</h3>
+          </div>
+          <div class="col-sm-10 step-content">
+            <h2>Swap $ETH for $LIONS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales lectus sed lectus dignissim suscipit. <br>
+              Etiam id ex odio. Phasellus consectetur neque justo, quis suscipit dui egestas sed. Mauris dignissim posuere finibus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="faq-section">
