@@ -2,7 +2,7 @@
   padding: 10% 5% 5%;
   margin: 0;
   width: 100%;
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-image: linear-gradient(0deg, #171717 50%, #434343 100%);
   color: white;
 }
 
@@ -102,7 +102,7 @@
   opacity: 0.05;
   font-size: 10rem !important;
   font-weight: bold;
-  margin-bottom: -5%;
+  margin-bottom: -4%;
 }
 
 #how-to-buy-section {
@@ -137,5 +137,43 @@
   padding-top: 20px;
   margin-top: 2%;
   margin-right: 30px;
+}
+
+#faq-section {
+  background: rgb(23,23,23);
+  background: linear-gradient(0deg,  rgba(23,23,23,1) 0%, rgba(158,81,0,1) 65%);
+  color: white;
+}
+
+#faq-section h1 {
+  font-size: 4rem;
+}
+
+.faq-item {
+  margin-top: 30px;
+  margin-left: 60px;
+  padding: 15px 30px;
+  background: rgba(208, 208, 208, 0.2);
+  border-radius: 30px;
+  transition: max-height 1s;
+}
+
+.faq-title {
+  color: white;
+  cursor: pointer;
+}
+
+.faq-content {
+  color: white;
+  text-align: left;
+}
+
+#before-footer {
+  background: rgba(23,23,23,1);
+  color: white;
+}
+
+#before-footer img {
+  margin-top: -20%;
 }
 

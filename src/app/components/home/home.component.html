@@ -33,8 +33,8 @@
     <div class="col-sm-6" style="text-align: center">
       <img src="./assets/How1_gif.gif" style="width: 100%;" />
     </div>
-    <div class="col-sm-12" style="text-align: center; margin-top: 60px;">
-      <span style="cursor:pointer;">
+    <div class="col-sm-12" style="text-align: center;">
+      <span style="cursor:pointer;" (click)="scrollToElement(whyLions)">
         <img src="./assets/Arrow-down.svg" style="width: 5%"/>
         <h3 style="color: #D0D0D0">Why Lions Heart?</h3>
       </span>
@@ -43,7 +43,7 @@
 
   <section id="why-section" class="col-sm-12 row">
     <div id="why-title" class="col-sm-12">
-      <h1 class="background-text">ROAR ROAR</h1>
+      <h1 class="background-text" #whyLions>ROAR ROAR</h1>
       <h1>Why Lions Heart?</h1>
     </div>
     <div [style.opacity]="scrolled === 1 ? '1' : '0'" id="instant-usage" class="col-sm-12 row why-section" style="margin-top: 8%" [@whyAnimation]>
@@ -109,7 +109,7 @@
     </div>
     <div class="col-sm-12 row" style="margin: 0">
       <div class="col-sm-5">
-        <img src="./assets/How1_gif.gif" style="width: 100%; margin-top: 30%;" />
+        <img src="./assets/how2_apng.png" style="width: 100%; margin-top: 30%;" />
       </div>
       <div id="steps" class="col-sm-7">
         <div class="col-sm-12 row step" [@slideInOut]="howStepOne">
@@ -164,6 +164,55 @@
   </section>
 
   <section id="faq-section">
+    <div class="col-sm-12" style="text-align: center; margin-bottom: 30px">
+      <h1 class="background-text">FAQ</h1>
+      <h1>Frequently Asked Questions</h1>
+    </div>
+    <div class="col-sm-12 row" style="margin: 30px 0 0 0; text-align: center">
+      <div class="col-sm-6">
+        <div class="col-sm-12 faq-item" [style.max-height]="firstQuestionClicked ? '100%' : '10%'">
+          <h3 class="faq-title" (click)="clickQuestion('first')" [@slideTitleAnimation]="firstQuestionClicked">
+            What does Lions Heart aim to achieve?
+          </h3>
+          <p class="faq-content" [@showQuestionAnswer]="firstQuestionClicked">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales lectus sed lectus dignissim suscipit.<br>
+            Etiam id ex odio. Phasellus consectetur neque justo, quis suscipit dui egestas sed. Mauris dignissim posuere finibus.<br>
+            Proin consectetur cursus iaculis. Duis faucibus ante ex, vitae vehicula sapien lacinia a. Duis non purus tortor.
+          </p>
+        </div>
 
+        <div class="col-sm-12 faq-item" [style.max-height]="secondQuestionClicked ? '100%' : '10%'">
+          <h3 class="faq-title" (click)="clickQuestion('second')" [@slideTitleAnimation]="secondQuestionClicked">
+            What does Lions Heart aim to achieve?
+          </h3>
+          <p class="faq-content" [@showQuestionAnswer]="secondQuestionClicked">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales lectus sed lectus dignissim suscipit.<br>
+            Etiam id ex odio. Phasellus consectetur neque justo, quis suscipit dui egestas sed. Mauris dignissim posuere finibus.<br>
+            Proin consectetur cursus iaculis. Duis faucibus ante ex, vitae vehicula sapien lacinia a. Duis non purus tortor.
+          </p>
+        </div>
+
+        <div class="col-sm-12 faq-item" [style.max-height]="thirdQuestionClicked ? '100%' : '10%'">
+          <h3 class="faq-title" (click)="clickQuestion('third')" [@slideTitleAnimation]="thirdQuestionClicked">
+            What does Lions Heart aim to achieve?
+          </h3>
+          <p class="faq-content" [@showQuestionAnswer]="thirdQuestionClicked">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales lectus sed lectus dignissim suscipit.<br>
+            Etiam id ex odio. Phasellus consectetur neque justo, quis suscipit dui egestas sed. Mauris dignissim posuere finibus.<br>
+            Proin consectetur cursus iaculis. Duis faucibus ante ex, vitae vehicula sapien lacinia a. Duis non purus tortor.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <img *ngIf="!faqClicked" src="./assets/FAQ2_still_img.png" style="width: 100%; margin-top: -10%" [@explodeAnimation]/>
+        <img *ngIf="faqClicked" src="./assets/FAQ1_still_img.png" style="width: 100%; margin-top: -10%" [@explodeAnimation]/>
+      </div>
+    </div>
+  </section>
+
+  <section id="before-footer" class="col-sm-12 row" style="margin: 0">
+    <div class="col-sm-12" style="text-align: center;">
+      <img src="./assets/big_gif_rocket_footer.gif" width="50%" />
+    </div>
   </section>
 </div>

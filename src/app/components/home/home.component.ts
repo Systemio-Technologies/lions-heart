@@ -40,7 +40,38 @@ import {animate, sequence, state, style, transition, trigger} from "@angular/ani
           animate('200ms ease-in', style({opacity: 0, transform: 'translateX(100%)'})),
         ])
       ]
-    )
+    ),
+    trigger('slideTitleAnimation', [
+        state('false', style({ transform: 'translateX(0%)' })),
+        state('true', style({ transform: 'translateX(-15%)' })),
+        transition('false => true', [
+          animate('200ms ease-in', style({transform: 'translateX(-15%)'})),
+        ]),
+        transition('true => false', [
+          animate('200ms ease-in', style({transform: 'translateX(0%)'})),
+        ])
+      ]
+    ),
+    trigger(
+      'explodeAnimation', [
+        transition(':enter', [
+          style({ opacity: 0 }),
+          animate(400, style({ opacity: 1 }))
+        ])
+      ]
+    ),
+    trigger(
+      'showQuestionAnswer', [
+        state('false', style({ opacity: 0 })),
+        state('true', style({ opacity: 1 })),
+        transition('false => true', [
+          animate('1200ms ease-in', style({opacity: 1})),
+        ]),
+        transition('true => false', [
+          animate('200ms ease-in', style({opacity: 0})),
+        ])
+      ]
+    ),
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
@@ -56,6 +87,12 @@ export class HomeComponent implements OnInit {
   howStepTwo = false;
   howStepThree = false;
   howStepFour = false;
+
+  faqClicked = false;
+
+  firstQuestionClicked = false;
+  secondQuestionClicked = false;
+  thirdQuestionClicked = false;
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll($event: any) {
@@ -94,6 +131,35 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  clickQuestion(param: string) {
+    if (!this.faqClicked) {
+      this.faqClicked = true;
+    }
+
+    switch (param) {
+      case 'first':
+          this.secondQuestionClicked = this.thirdQuestionClicked = false;
+          this.firstQuestionClicked = !this.firstQuestionClicked;
+          break;
+      case 'second':
+        this.firstQuestionClicked = this.thirdQuestionClicked = false;
+        this.secondQuestionClicked = !this.secondQuestionClicked;
+        break;
+      case 'third':
+        this.firstQuestionClicked = this.secondQuestionClicked = false;
+        this.thirdQuestionClicked = !this.thirdQuestionClicked;
+        break;
+    }
+
+    if (!this.firstQuestionClicked && !this.secondQuestionClicked && !this.thirdQuestionClicked) {
+      this.faqClicked = false;
+    }
+  }
+
+  scrollToElement($element: any): void {
+    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 
 }
