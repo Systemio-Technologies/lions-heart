@@ -43,9 +43,9 @@ import {animate, sequence, state, style, transition, trigger} from "@angular/ani
     ),
     trigger('slideTitleAnimation', [
         state('false', style({ textAlign: 'center', transform: 'translateX(0%)' })),
-        state('true', style({ textAlign: 'left', transform: 'translateX(-5%)' })),
+        state('true', style({ transform: 'translateX(-5%)' })),
         transition('false => true', [
-          animate('200ms ease-in', style({textAlign: 'left', transform: 'translateX(-5%)'})),
+          animate('200ms ease-in', style({transform: 'translateX(-5%)'})),
         ]),
         transition('true => false', [
           animate('200ms ease-in', style({textAlign: 'center', transform: 'translateX(0%)'})),
