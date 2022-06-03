@@ -126,6 +126,9 @@ export class HomeComponent implements OnInit {
         }, 500);
       }, 500);
     }
+
+    // start video
+
   }
 
   constructor() { }

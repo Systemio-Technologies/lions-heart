@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 100;
+  src: url(assets/Lexend+Deca/Lexend-Deca-normal-100.woff2) format('woff2'), url(assets/Lexend+Deca/Lexend-Deca-normal-100.ttf) format('truetype'), url(assets/Lexend+Deca/Lexend-Deca-normal-100.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 300;
+  src: url(assets/Lexend+Deca/Lexend-Deca-normal-300.woff2) format('woff2'), url(assets/Lexend+Deca/Lexend-Deca-normal-300.ttf) format('truetype'), url(assets/Lexend+Deca/Lexend-Deca-normal-300.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  src: url(assets/Lexend+Deca/Lexend-Deca-normal-400.eot);
+  src: local('Lexend Deca'), url(assets/Lexend+Deca/Lexend-Deca-normal-400.woff2) format('woff2'), url(assets/Lexend+Deca/Lexend-Deca-normal-400.svg#LexendDeca) format('svg'), url(assets/Lexend+Deca/Lexend-Deca-normal-400.eot?#iefix) format('embedded-opentype'), url(assets/Lexend+Deca/Lexend-Deca-normal-400.ttf) format('truetype'), url(assets/Lexend+Deca/Lexend-Deca-normal-400.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 700;
+  src: url(assets/Lexend+Deca/Lexend-Deca-normal-700.woff2) format('woff2'), url(assets/Lexend+Deca/Lexend-Deca-normal-700.ttf) format('truetype'), url(assets/Lexend+Deca/Lexend-Deca-normal-700.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 900;
+  src: url(assets/Lexend+Deca/Lexend-Deca-normal-900.woff2) format('woff2'), url(assets/Lexend+Deca/Lexend-Deca-normal-900.ttf) format('truetype'), url(assets/Lexend+Deca/Lexend-Deca-normal-900.woff) format('woff');
+}
+
