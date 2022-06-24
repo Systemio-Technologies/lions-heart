@@ -22,7 +22,7 @@ import { trigger, style, animate, transition } from '@angular/animations';
   styleUrls: ['./app.component.scss', './app.component.mobile.scss']
 })
 export class AppComponent {
-  title = 'Lions Heart';
+  title = 'LionsHeart';
   faBrands = faBrands;
 
   constructor(public loadingService: LoadingService) { }

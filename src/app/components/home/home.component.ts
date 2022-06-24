@@ -1,7 +1,9 @@
-import {Component, HostListener, OnInit} from '@angular/core';
+import {Component, ElementRef, HostListener, OnInit, ViewChild} from '@angular/core';
 import * as faBrands from "@fortawesome/free-brands-svg-icons";
 import * as faIcons from "@fortawesome/free-solid-svg-icons";
 import {animate, sequence, state, style, transition, trigger} from "@angular/animations";
+
+declare let $: any;
 
 @Component({
   selector: 'app-home',
@@ -94,6 +96,10 @@ export class HomeComponent implements OnInit {
   secondQuestionClicked = false;
   thirdQuestionClicked = false;
 
+  scrolledToVideo = false;
+
+  @ViewChild('media') media: ElementRef = new ElementRef(null);
+
   @HostListener('window:scroll', ['$event'])
   onWindowScroll($event: any) {
     const numb = window.scrollY;
@@ -114,7 +120,7 @@ export class HomeComponent implements OnInit {
       this.scrolled = 0;
     }
 
-    if (numb >= 2700) {
+    if (numb >= 3600) {
       this.howStepOne = true;
       setTimeout(() => {
         this.howStepTwo = true;
@@ -128,12 +134,21 @@ export class HomeComponent implements OnInit {
     }
 
     // start video
+    if (numb > 2600 && numb < 3000) {
+      if (!this.scrolledToVideo) {
+        this.scrolledToVideo = true;
+        $('.vg-overlay-play').click();
+      }
+    }
 
   }
 
   constructor() { }
 
   ngOnInit(): void {
+    setTimeout(() => {
+      $('#hero-button').trigger('click');
+    }, 500);
   }
 
   clickQuestion(param: string) {

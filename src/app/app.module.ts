@@ -7,6 +7,10 @@ import { HomeComponent } from './components/home/home.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+import {VgBufferingModule} from "@videogular/ngx-videogular/buffering";
+import {VgControlsModule} from "@videogular/ngx-videogular/controls";
+import {VgCoreModule} from "@videogular/ngx-videogular/core";
+import {VgOverlayPlayModule} from "@videogular/ngx-videogular/overlay-play";
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
