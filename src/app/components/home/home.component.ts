@@ -140,7 +140,6 @@ export class HomeComponent implements OnInit {
         $('.vg-overlay-play').click();
       }
     }
-
   }
 
   constructor() { }
@@ -180,4 +179,15 @@ export class HomeComponent implements OnInit {
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 
+  closeVideoModal(modal: HTMLDivElement, video: HTMLVideoElement) {
+    video.autoplay = false
+    video.pause()
+    modal.style.display = 'none'
+  }
+
+  playTeaserVideo(modal: HTMLDivElement, video: HTMLVideoElement) {
+    modal.style.display = 'block'
+    video.autoplay = true
+    video.play()
+  }
 }
