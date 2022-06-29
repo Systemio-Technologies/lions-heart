@@ -98,6 +98,9 @@ export class HomeComponent implements OnInit {
 
   scrolledToVideo = false;
 
+  videoPosterUrl = 'https://i.imgur.com/ke2X5ai.jpg';
+  videoUrl = 'http://static.videogular.com/assets/videos/videogular.mp4';
+
   @ViewChild('media') media: ElementRef = new ElementRef(null);
 
   @HostListener('window:scroll', ['$event'])
@@ -177,17 +180,5 @@ export class HomeComponent implements OnInit {
 
   scrollToElement($element: any): void {
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-  }
-
-  closeVideoModal(modal: HTMLDivElement, video: HTMLVideoElement) {
-    video.autoplay = false
-    video.pause()
-    modal.style.display = 'none'
-  }
-
-  playTeaserVideo(modal: HTMLDivElement, video: HTMLVideoElement) {
-    modal.style.display = 'block'
-    video.autoplay = true
-    video.play()
   }
 }
