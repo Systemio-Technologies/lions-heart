@@ -98,6 +98,9 @@ export class HomeComponent implements OnInit {
 
   scrolledToVideo = false;
 
+  videoPosterUrl = 'https://i.imgur.com/ke2X5ai.jpg';
+  videoUrl = 'http://static.videogular.com/assets/videos/videogular.mp4';
+
   @ViewChild('media') media: ElementRef = new ElementRef(null);
 
   @HostListener('window:scroll', ['$event'])
@@ -140,7 +143,6 @@ export class HomeComponent implements OnInit {
         $('.vg-overlay-play').click();
       }
     }
-
   }
 
   constructor() { }
@@ -179,5 +181,4 @@ export class HomeComponent implements OnInit {
   scrollToElement($element: any): void {
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
-
 }

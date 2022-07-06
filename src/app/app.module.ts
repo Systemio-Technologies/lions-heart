@@ -11,12 +11,14 @@ import {VgBufferingModule} from "@videogular/ngx-videogular/buffering";
 import {VgControlsModule} from "@videogular/ngx-videogular/controls";
 import {VgCoreModule} from "@videogular/ngx-videogular/core";
 import {VgOverlayPlayModule} from "@videogular/ngx-videogular/overlay-play";
+import { VideoPlayerComponent } from './components/video-player/video-player.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoadingComponent
+    LoadingComponent,
+    VideoPlayerComponent
   ],
   imports: [
     BrowserModule,
